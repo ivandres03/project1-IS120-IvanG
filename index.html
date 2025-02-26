@@ -13,6 +13,9 @@
     
     <!-- Google Icon -->
     <script src="https://kit.fontawesome.com/981336eb75.js" crossorigin="anonymous"></script>
+
+    <!-- Tailwind -->
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
 </head>
 
 <body>
@@ -22,14 +25,97 @@
             <i class="fa-solid fa-bars"></i>
             <h1 class="title-container">Online Artisanal Market</h1>
         </nav>
+        <h1 class="title-first-page">Online Artisanal Market</h1>
         <div id="first-page-buttons">
-            <button><i class="fa-solid fa-shop"></i> Explore our Heritage</button>
+            <a href="#about-us"><button><i class="fa-solid fa-shop"></i> Explore our Heritage</button></a>
             <button><i class="fa-solid fa-cart-shopping"></i> Shop Now</button>
-            
         </div>
-        <i class="fa-solid fa-angle-down"></i>
+            <i class="fa-solid fa-angle-down"></i>
     </section>
 
-    other etext here
+    <section class="second-page">
+        <section id="about-us" class="about-us">
+            <img src="./images/market-view-5.jpg" alt="mask image">
+            <div class="about-us-text">
+                <h1 class="text-white">OUR HERITAGE</h1>
+                <h2>Foundation and Purpose</h2>        
+                <p class="website-description">
+                    Founded in 1993, the Mercado Artesanal de Quito was created to preserve Ecuador’s cultural heritage by providing a platform for local artisans to showcase their handmade crafts. It promotes traditional Ecuadorian craftsmanship and serves as a key space for artisans to connect with both locals and tourists.</p>
+                <h2>Cultural Significance</h2>
+                <p class="website-description">
+                    The market is vital for preserving Ecuador’s diverse traditions. From Andean textiles to Amazonian crafts, each product tells the story of Ecuador’s rich cultural identity. The market ensures these traditions are kept alive for future generations.
+                </p>
+                <h2>A Hub for Tourism and Community</h2>
+                <p class="website-description">
+                    The Mercado Artesanal is a must-visit for both tourists and locals. Visitors can purchase unique handmade items while learning about Ecuador’s history and traditions, and the market serves as a cherished community space for cultural celebration.
+                </p>
+                <h2>Legacy and Future</h2>
+                <p class="website-description">
+                    The Mercado Artesanal de Quito continues to evolve, supporting artisans while preserving Ecuador’s craftsmanship. It remains an essential symbol of the city’s commitment to its cultural roots and a key player in Ecuador’s future.
+                </p>
+            </div>
+        </section>
+
+        <section class="artisans-section">
+            <h2 class="section-title">Meet Our Artisans</h2>
+            <div class="artisans-container">
+                <div class="artisan-card">
+                    <div class="card-image" style="background-image: url('./images/artisan-2.jpg');"></div>
+                    <div class="card-info">
+                        <h3 class="artisan-name">Carlos Yupanqui</h3>
+                        <p class="artisan-description">A master weaver with over 20 years of experience, preserving Ecuadorian textile traditions.</p>
+                    </div>
+                </div>
+        
+                <div class="artisan-card">
+                    <div class="card-image" style="background-image: url('./images/artisan-1.jpg');"></div>
+                    <div class="card-info">
+                        <h3 class="artisan-name">María Quishpe</h3>
+                        <p class="artisan-description">Creates intricate ceramic pieces inspired by Andean culture and folklore.</p>
+                    </div>
+                </div>
+        
+                <div class="artisan-card">
+                    <div class="card-image" style="background-image: url('./images/artisan-3.jpg');"></div>
+                    <div class="card-info">
+                        <h3 class="artisan-name">David Guamán</h3>
+                        <p class="artisan-description">Expert in handcrafted jewelry, blending modern designs with ancestral techniques.</p>
+                    </div>
+                </div>
+
+                <div class="artisan-card">
+                    <div class="card-image" style="background-image: url('./images/artisan-4.jpg');"></div>
+                    <div class="card-info">
+                        <h3 class="artisan-name">Andrea Quishpe</h3>
+                        <p class="artisan-description">Talented weaver creating intricate textiles that tell the stories of Andean culture.</p>
+                    </div>
+                </div>
+                
+                <div class="artisan-card">
+                    <div class="card-image" style="background-image: url('./images/artisan-5.jpg');"></div>
+                    <div class="card-info">
+                        <h3 class="artisan-name">Mateo Lema</h3>
+                        <p class="artisan-description">Skilled artisan crafting handmade musical instruments, preserving the sound of Ecuador’s traditions.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+
+
+
+        <section class="page-divider-1">
+            <h1>divider</h1>
+        </section>
+        <!--
+        <div class="galery">
+            <img src="./images/market-view-6.jpg" alt="">
+            <img src="./images/fabrics-2.jpg" alt="">
+            <img src="./images/p-dress.jpg" alt="">
+        </div>--> 
+    </section>
+
+    
+
 </body>
 </html>
