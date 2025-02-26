@@ -1,6 +1,7 @@
 body{
     background-color: rgb(20, 20, 73);
     color: rgb(20, 20, 73);
+    font-family: "League Spartan";
 }
 .first-page {
     margin: none;
@@ -32,30 +33,32 @@ body{
     transition: 0.6s;
 }
 
-.search-bar img {
-    width: 30px;
+.search-bar i {
+    font-size: 2rem;
     opacity: 0; 
-    transition: 0.6s; 
+    transition: 0.5s; 
+    align-self: center;
 }
 
-.search-bar:hover img {
+.search-bar:hover i {
     opacity: 1;
+    cursor: pointer;
 }
 
 .search-bar .title-container {
     flex-grow: 1; 
     display: flex;
     justify-content: center;
-}
-.search-bar h1 {
     font-size: 45px;
-    margin: 0;
-    text-align: center;
+    margin-top: 1rem;
 }
+
 
 #first-page-buttons{
     display: flex;
     flex-direction: row;
+    flex-grow: 1;
+    align-items: center;
 }
 
 .first-page button{    
@@ -74,12 +77,19 @@ body{
     background-color: #202859; 
     color: rgb(255, 255, 255);
     border-color: rgb(220, 220, 230);
+    cursor: pointer;
 }
 
-#arrow-down{
-    width: 1.2rem;
+.fa-angle-down{
+    width: 1rem;
     background-color: rgba(240, 248, 255, 0.477);
     border-radius: 15px;
     padding: 0.5rem;
-    margin-top: 6.2rem;  /* intentar cambiarlo para que sea solo con flow no con rem*/
+    margin-bottom: 1rem; 
+}
+
+.fa-angle-down:hover{
+    color: rgb(213, 209, 209);
+    background-color: #20285963;
+    cursor: pointer;
 }
