@@ -25,11 +25,13 @@
             <i class="fa-solid fa-bars"></i>
             <h1 class="title-container">Online Artisanal Market</h1>
         </nav>
-        <h1 class="title-first-page">Online Artisanal Market</h1>
+        <!--<h1 class="title-first-page">Online Artisanal Market</h1>-->
         <div id="first-page-buttons">
             <a href="#about-us"><button><i class="fa-solid fa-shop"></i> Explore our Heritage</button></a>
-            <button><i class="fa-solid fa-cart-shopping"></i> Shop Now</button>
-        </div>
+            <a href="shop.html">
+                <button><i class="fa-solid fa-cart-shopping"></i> Shop Now</button>
+            </a>
+                    </div>
             <i class="fa-solid fa-angle-down"></i>
     </section>
 
@@ -56,6 +58,7 @@
             </div>
         </section>
 
+        <!--ARTISANS SENTION-->
         <section class="artisans-section">
             <h2 class="section-title">Meet Our Artisans</h2>
             <div class="artisans-container">
@@ -100,19 +103,59 @@
                 </div>
             </div>
         </section>
-        
 
+        <section class="more-details">
+        <!--More Details SECTION-->
+            <div class="detail-1">
+            <h1>Why Buy Handmade?</h1>
+            <ul>
+                <li><strong>Support Artisans & Culture:</strong> Every purchase helps preserve Ecuadorian traditions and craftsmanship.</li>
+                <li><strong>Unique & High-Quality:</strong> Handmade products are crafted with care, making each piece one-of-a-kind.</li>
+                <li><strong>Sustainable & Ethical:</strong> Artisans use local, eco-friendly materials, ensuring fair and responsible production.</li>
+            </ul>
+            </div>
 
-
-        <section class="page-divider-1">
-            <h1>divider</h1>
+            <div class="detail-2">
+            <h1>Customer Stories</h1>
+            <ul>
+                <li><strong>Sophie, USA:</strong> "My poncho is more than clothing—it's a piece of Ecuadorian history."</li>
+                <li><strong>Luis, Spain:</strong> "My handmade wallet carries a legacy of craftsmanship."</li>
+                <li><strong>Emily, Canada:</strong> "Handmade jewelry makes the perfect meaningful gift."</li>
+            </ul>
+            </div>
         </section>
-        <!--
-        <div class="galery">
-            <img src="./images/market-view-6.jpg" alt="">
-            <img src="./images/fabrics-2.jpg" alt="">
-            <img src="./images/p-dress.jpg" alt="">
-        </div>--> 
+
+        <!--EXPLORE THE MARKET-->
+        <section class="image-slider">
+            <h2 class="slides-title">Explore the Market</h2>
+            <div class="slider-container">
+                <div class="slide fade" style="background-image: url('./images/horizontal-view-img.jpg');"></div>
+                <div class="slide fade" style="background-image: url('./images/hats.jpg');"></div>
+                <div class="slide fade" style="background-image: url('./images/p-art-1.jpg');"></div>
+                <div class="slide fade" style="background-image: url('./images/p-dress.jpg');"></div>
+            </div>
+            
+            <!-- Navigation Arrows -->
+            <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+            <button class="next" onclick="moveSlide(1)">&#10095;</button>
+        </section>
+        
+        
+        <script>
+        let currentIndex = 0;
+        const slides = document.querySelectorAll('.slide');
+        slides[currentIndex].classList.add('active');
+        
+        function moveSlide(step) {
+            slides[currentIndex].classList.remove('active');
+            currentIndex = (currentIndex + step + slides.length) % slides.length;
+            slides[currentIndex].classList.add('active');
+        }
+        
+        // changing image each 5 seconds
+        setInterval(() => moveSlide(1), 5000);
+        </script>
+        
     </section>
 
     
