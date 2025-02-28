@@ -1,16 +1,64 @@
 body{
     display: flex;
     flex-direction: column;
-    background-color: rgb(24, 24, 59);
+    background-color: rgb(12, 12, 42);
 }
 
-nav{
-    color: aliceblue;
+
+h1{
+    font-size: 3rem;
 }
+h2{
+    font-size: 1.5rem;
+}
+
+
+.main-nav{
+    background-color: rgb(200, 203, 203);
+    color: rgb(21, 15, 62);
+    width: 100%;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+}
+
+.return-button{
+    margin: 0.5rem 0.5rem 0.5rem 1rem;
+    justify-self: start;    
+    font-weight: bold;
+    border: solid rgb(200, 203, 203);
+    background-color: rgba(183, 185, 185, 0.362);
+    padding: 4px;
+    border-radius: 15px;
+    /*box-shadow: 1px 2px 9px 0.1px rgb(12, 12, 42);*/ 
+}
+
+.return-button:hover{
+    text-decoration: underline;
+    background-color: rgb(183, 185, 185)
+}
+
+.main-nav h2 {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.main-nav img {
+    margin: 0.5rem 1rem 0.5rem 1rem;
+    justify-self: end;
+    width: 2rem;;
+}
+
+.call-to-action{
+    color: rgb(23, 23, 76);
+    margin: 1rem;
+}
+
+/* Container */
 
 .main-container{
-    background-color: rgb(191, 191, 190);
-    margin: 1rem 1rem 1rem 1rem;
+    background-color: rgb(210, 210, 208);
+    margin: 5rem 5rem 5rem 5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -36,15 +84,18 @@ nav{
 .card{
     display:flex;
     flex-direction: column;
-    height: 50vh;
+    height: 60vh;
     width: 300px;   
     align-items: center; 
     justify-content: space-between;
     border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
 }
 
 .card:hover{
     box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.2);
+    transform: translateY(-10px); 
 }
 
 .card p{
@@ -66,8 +117,6 @@ nav{
     border-radius: 0 0 15px 15px; 
 }
 
-
-
 .product-container{
     display: flex;
     flex-direction: row;
@@ -78,11 +127,69 @@ nav{
     margin-bottom: 4rem;
 }
 
+/* Product card style */ 
 .p-card{
     display:flex;
     flex-direction: column;
-    border: 5px rgb(0, 255, 34) solid;
-    height: 50vh;
     width: 200px;
-    
+    min-height: 500px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.p-card:hover{
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.2);
+    transform: translateY(-10px); 
+}
+
+.img-container{
+    display: flex;
+    height: 65%;
+    width: 100%;
+}
+
+.img-container img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.card-info{
+    height: 35%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(231, 232, 233);
+    padding: 0 0.5rem 0 0.5rem;
+}
+
+
+.card-info button{
+    margin-top: auto;
+}
+
+/* Footer Styles */
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  .footer-content {
+    color: antiquewhite;
+    margin: 0 auto;
+  }
+
+  @media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+      }
+    .footer1, .footer2, .footer3{
+        width: 90%;
+    }
+}
+
+.social-media i:hover{
+    cursor: pointer;
+    color: #a7a7ac;
 }

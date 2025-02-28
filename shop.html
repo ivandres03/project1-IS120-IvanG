@@ -18,14 +18,16 @@
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
 </head>
 <body>
-    <nav class="main-nav">
-        <a href="./index.html"><p>Main Page</p></a>
+    <nav class="main-nav flex">
+        <a class="return-button" href="./index.html"><h3>Main Page</h3></a>
+        <h2>ONLINE ARTISANAL MARKET SHOP</h2>
+        <img src="./images/Logo-market.png" alt="artisanal market logo">
     </nav>
 
     <Section class="main-container">
         <div class="search-bar">Here add a search bar</div>
 
-        <div class="side-bar">Add something here</div>
+        <div class="call-to-action"> <h2>Every piece tells a story – Which one will become part of yours?</h2></div>
 
         <section class="product-options">
             <a href="#clothing"><div class="card">
@@ -39,7 +41,7 @@
             </div></a>
 
             <a href="#jewerly"><div class="card">
-                <p>Souvenirs</p>
+                <p>Jewerly</p>
                 <img src="./images/bracelets.jpg" alt="Jewerly Picture">
             </div></a>
 
@@ -52,145 +54,420 @@
                 <p>Combos</p>
                 <img src="./images/market-view-7.jpg" alt="">
             </div></a>
+
+            <!--Products-->
         </section>
 
+        <!--Clothing Section-->
         <h1 id="clothing">Clothing</h1>
-        <section class="product-container">
+        <section class="product-container ml-16 mr-16">
             <div class="p-card">
-                <img src="" alt="">
-                <h1>Name</h1>
-                <p>Description</p>
-                <p>Price $</p>
-                <button>Order</button>
+                <div class="img-container">
+                    <img src="./images/p-poncho-3.jpg" alt=">Gray poncho picture">
+                </div>
+                <div class="card-info">
+                    <h3 class="name font-semibold">Gray Poncho</h3>
+                    <p class="description text-xs">Cozy blue poncho woven with traditional Ecuadorian patterns – perfect blend of warmth and style.</p>
+                    <p class="price text-xl font-semibold">$50.00</p>
+                    <button class="border-2-none rounded-lg bg-orange-400 hover:bg-orange-700 m-2 ">Order</button>
+                </div>
             </div>
 
             <div class="p-card">
-                <img src="" alt="">
-                <h1>Name</h1>
-                <p>Description</p>
-                <p>Price $</p>
-                <button>Order</button>
+                <div class="img-container">
+                    <img src="./images/p-poncho-2.jpg" alt="blue poncho picture">
+                </div>
+                <div class="card-info">
+                    <h3 class="name font-semibold">Blue Poncho</h3>
+                    <p class="description text-xs">Cozy blue poncho woven with traditional Ecuadorian patterns – perfect blend of warmth and style.</p>
+                    <p class="price text-xl font-semibold">$50.00</p>
+                    <button class="border-2-none rounded-lg bg-orange-400 hover:bg-orange-700 m-2">Order</button>
+                </div>
             </div>
 
             <div class="p-card">
-                <img src="" alt="">
-                <h1>Name</h1>
-                <p>Description</p>
-                <p>Price $</p>
-                <button>Order</button>
+                <div class="img-container">
+                    <img src="./images/p-poncho-4.jpg" alt="Black poncho picture">
+                </div>
+                <div class="card-info">
+                    <h3 class="name font-semibold">Black Poncho</h3>
+                    <p class="description text-xs">Cozy blue poncho woven with traditional Ecuadorian patterns – perfect blend of warmth and style.</p>
+                    <p class="price text-xl font-semibold">$50.00</p>
+                    <button class="border-2-none rounded-lg bg-orange-400 hover:bg-orange-700 m-2">Order</button>
+                </div>
+            </div>
+
+            <div class="p-card">
+                <div class="img-container">
+                    <img src="./images/p-sweater-blue.jpg" alt="blue sweater picture">
+                </div>
+                <div class="card-info">
+                    <h3 class="name font-semibold">Blue Sweater</h3>
+                    <p class="description text-xs">Soft, warm, and crafted from 100% natural wool with traditional Andean patterns — a timeless blend of comfort and style.
+                    </p>
+                    <p class="price text-xl font-semibold">$35.00</p>
+                    <button class="border-2-none rounded-lg bg-orange-400 hover:bg-orange-700 m-2">Order</button>
+                </div>
+            </div>
+
+            <div class="p-card">
+                <div class="img-container">
+                    <img src="./images/p-sweater-red.jpg" alt="Red Sweater picture">
+                </div>
+                <div class="card-info">
+                    <h3 class="name font-semibold">Red Sweater</h3>
+                    <p class="description text-xs">Soft, warm, and crafted from 100% natural wool with traditional Andean patterns — a timeless blend of comfort and style.
+                    </p>
+                    <p class="price text-xl font-semibold">$35.00</p>
+                    <button class="border-2-none rounded-lg bg-orange-400 hover:bg-orange-700 m-2">Order</button>
+                </div>
+            </div>
+
+            <div class="p-card">
+                <div class="img-container">
+                    <img src="./images/p-sweater-white.jpg" alt="White Sweater picture">
+                </div>
+                <div class="card-info">
+                    <h3 class="name font-semibold">White Sweater</h3>
+                    <p class="description text-xs">Soft, warm, and crafted from 100% natural wool with traditional Andean patterns — a timeless blend of comfort and style.
+                    </p>
+                    <p class="price text-xl font-semibold">$35.00</p>
+                    <button class="border-2-none rounded-lg bg-orange-400 hover:bg-orange-700 m-2">Order</button>
+                </div>
+            </div>
+
+            <div class="p-card">
+                <div class="img-container">
+                    <img src="./images/p-sweater-diablo.jpg" alt="Diablo Sweater picture">
+                </div>
+                <div class="card-info">
+                    <h3 class="name font-semibold">Diablo Huma Sweater</h3>
+                    <p class="description text-xs">Soft, warm, and crafted from 100% natural wool with traditional Andean patterns — a timeless blend of comfort and style.
+                    </p>
+                    <p class="price text-xl font-semibold">$35.00</p>
+                    <button class="border-2-none rounded-lg bg-orange-400 hover:bg-orange-700 m-2">Order</button>
+                </div>
+            </div>
+
+            <div class="p-card">
+                <div class="img-container">
+                    <img src="./images/colorful-belts.jpg" alt="Belts picture">
+                </div>
+                <div class="card-info">
+                    <h3 class="name font-semibold">Colorful Belts</h3>
+                    <p class="description text-xs">Handwoven with vivid Andean patterns, this belt blends tradition and style, adding a unique touch to any outfit.
+                    </p>
+                    <p class="price text-xl font-semibold">$15.00</p>
+                    <button class="border-2-none rounded-lg bg-orange-400 hover:bg-orange-700 m-2">Order</button>
+                </div>
             </div>
         </section>
+
+        <!--Souvenirs-->
 
         <h1 id="souvenirs">Souvenirs</h1>
         <section class="product-container">
             <div class="p-card">
-                <img src="" alt="">
-                <h1>Name</h1>
-                <p>Description</p>
-                <p>Price $</p>
-                <button>Order</button>
+                <div class="img-container">
+                    <img src="./images/p-animals-penguin.jpg" alt="Stuff animals picture">
+                </div>
+                <div class="card-info">
+                    <h3 class="name font-semibold">Penguin Stuff animal</h3>
+                    <p class="description text-xs">Soft and colorful plush animal featuring vibrant Andean patterns, handcrafted with care — a cozy blend of tradition and charm.</p>
+                    <p class="price text-xl font-semibold">$20.00</p>
+                    <button class="border-2-none rounded-lg bg-orange-400 hover:bg-orange-700 m-2">Order</button>
+                </div>
             </div>
 
             <div class="p-card">
-                <img src="" alt="">
-                <h1>Name</h1>
-                <p>Description</p>
-                <p>Price $</p>
-                <button>Order</button>
+                <div class="img-container">
+                    <img src="./images/p-animals-Capybara.jpg" alt="Stuff animals picture">
+                </div>
+                <div class="card-info">
+                    <h3 class="name font-semibold">Capybara Stuff animal</h3>
+                    <p class="description text-xs">Soft and colorful plush animal featuring vibrant Andean patterns, handcrafted with care — a cozy blend of tradition and charm.</p>
+                    <p class="price text-xl font-semibold">$20.00</p>
+                    <button class="border-2-none rounded-lg bg-orange-400 hover:bg-orange-700 m-2">Order</button>
+                </div>
             </div>
 
             <div class="p-card">
-                <img src="" alt="">
-                <h1>Name</h1>
-                <p>Description</p>
-                <p>Price $</p>
-                <button>Order</button>
+                <div class="img-container">
+                    <img src="./images/p-chess.jpg" alt="Chess picture">
+                </div>
+                <div class="card-info">
+                    <h3 class="name font-semibold">Indigenous vs. Conquistadors Chess Set</h3>
+                    <p class="description text-xs">Handcrafted chess set with detailed pieces representing Indigenous warriors and Spanish conquistadors — a blend of art and history.</p>
+                    <p class="price text-xl font-semibold">$35.00</p>
+                    <button class="border-2-none rounded-lg bg-orange-400 hover:bg-orange-700 m-2">Order</button>
+                </div>
             </div>
 
+            <div class="p-card">
+                <div class="img-container">
+                    <img src="./images/diablo-huma-2.jpg" alt="Diablo Huma mask picture">
+                </div>
+                <div class="card-info">
+                    <h3 class="name font-semibold">Diablo Huma Mask</h3>
+                    <p class="description text-xs">A vibrant symbol of Andean folklore, representing wisdom and duality. Carefully handcrafted with bold colors and intricate details.</p>
+                    <p class="price text-xl font-semibold">$25.00</p>
+                    <button class="border-2-none rounded-lg bg-orange-400 hover:bg-orange-700 m-2">Order</button>
+                </div>
+            </div>
+
+            <div class="p-card">
+                <div class="img-container">
+                    <img src="./images/p-keychains.jpg" alt="keychains picture">
+                </div>
+                <div class="card-info">
+                    <h3 class="name font-semibold">keychains</h3>
+                    <p class="description text-xs">Small yet vibrant, these handmade keychains showcase Ecuadorian symbols, carrying a piece of local culture wherever you go.</p>
+                    <p class="price text-xl font-semibold">$5.00</p>
+                    <button class="border-2-none rounded-lg bg-orange-400 hover:bg-orange-700 m-2">Order</button>
+                </div>
+            </div>
+
+            <div class="p-card">
+                <div class="img-container">
+                    <img src="./images/p-wallet-1.jpg" alt="Leather Wallet picture">
+                </div>
+                <div class="card-info">
+                    <h3 class="name font-semibold">Leather Wallet</h3>
+                    <p class="description text-xs">Made from genuine leather, this wallet combines durability and elegance, featuring classic design with a touch of Andean craftsmanship.</p>
+                    <p class="price text-xl font-semibold">$22.00</p>
+                    <button class="border-2-none rounded-lg bg-orange-400 hover:bg-orange-700 m-2">Order</button>
+                </div>
+            </div>
+
+            <div class="p-card">
+                <div class="img-container">
+                    <img src="./images/p-magnet-1.jpg" alt="magnets picture">
+                </div>
+                <div class="card-info">
+                    <h3 class="name font-semibold">Magnets</h3>
+                    <p class="description text-xs">Colorful and handcrafted, these magnets capture Ecuador's rich culture, perfect for adding a touch of Andean charm to any space.</p>
+                    <p class="price text-xl font-semibold">$5.00</p>
+                    <button class="border-2-none rounded-lg bg-orange-400 hover:bg-orange-700 m-2">Order</button>
+                </div>
+            </div>
+
+            <div class="p-card">
+                <div class="img-container">
+                    <img src="./images/p-wallet-2.jpg" alt="Leather Coin Purse picture">
+                </div>
+                <div class="card-info">
+                    <h3 class="name font-semibold">Leather Coin Purse</h3>
+                    <p class="description text-xs">Compact and durable, this genuine leather coin purse keeps your essentials secure while reflecting timeless Andean craftsmanship.</p>
+                    <p class="price text-xl font-semibold">$12.00</p>
+                    <button class="border-2-none rounded-lg bg-orange-400 hover:bg-orange-700 m-2">Order</button>
+                </div>
+            </div>
+
+            <div class="p-card">
+                <div class="img-container">
+                    <img src="./images/p-wallet-3.jpg" alt="Woven Coin Purse picture">
+                </div>
+                <div class="card-info">
+                    <h3 class="name font-semibold">Woven Coin Purse</h3>
+                    <p class="description text-xs">Colorful and practical, this purse features traditional Andean patterns, perfect for carrying coins with a touch of Ecuadorian heritage.</p>
+                    <p class="price text-xl font-semibold">$7.00</p>
+                    <button class="border-2-none rounded-lg bg-orange-400 hover:bg-orange-700 m-2">Order</button>
+                </div>
+            </div>
+
+            <div class="p-card">
+                <div class="img-container">
+                    <img src="./images/p-bracelet-1.jpg" alt="colorful bracelets picture">
+                </div>
+                <div class="card-info">
+                    <h3 class="name font-semibold">Colorful Bracelets M</h3>
+                    <p class="description text-xs">Crafted with small, vibrant beads, this bracelet features intricate geometric patterns and adjustable closure — a blend of artistry and style perfect for any occasion.</p>
+                    <p class="price text-xl font-semibold">$5.00</p>
+                    <button class="border-2-none rounded-lg bg-orange-400 hover:bg-orange-700 m-2">Order</button>
+                </div>
+            </div>
+
+            <div class="p-card">
+                <div class="img-container">
+                    <img src="./images/p-bracelet-2.jpg" alt="colorful bracelets picture">
+                </div>
+                <div class="card-info">
+                    <h3 class="name font-semibold">Colorful Bracelets S</h3>
+                    <p class="description text-xs">Crafted with small, vibrant beads, this bracelet features intricate geometric patterns and adjustable closure — a blend of artistry and style perfect for any occasion.</p>
+                    <p class="price text-xl font-semibold">$3.00</p>
+                    <button class="border-2-none rounded-lg bg-orange-400 hover:bg-orange-700 m-2">Order</button>
+                </div>
+            </div>
+
+            <div class="p-card">
+                <div class="img-container">
+                    <img src="./images/p-pencilcase.jpg" alt="colorful pencilcase picture">
+                </div>
+                <div class="card-info">
+                    <h3 class="name font-semibold">Fabric Pencil Case</h3>
+                    <p class="description text-xs">A unique, artisanal pencil case made with vibrant, hand-stitched fabrics. </p>
+                    <p class="price text-xl font-semibold">$8.00</p>
+                    <button class="border-2-none rounded-lg bg-orange-400 hover:bg-orange-700 m-2">Order</button>
+                </div>
+            </div>
 
         </section>
+
+
+        <!--Jewerly Section -->
 
         <h1 id="jewerly">Jewerly</h1>
         <section class="product-container">
+
             <div class="p-card">
-                <img src="" alt="">
-                <h1>Name</h1>
-                <p>Description</p>
-                <p>Price $</p>
-                <button>Order</button>
+                <div class="img-container">
+                    <img src="./images/bracelet-2.jpg" alt="Bracelet Metals Set picture">
+                </div>
+                <div class="card-info">
+                    <h3 class="name font-semibold">Bracelet Metals Set</h3>
+                    <p class="description text-xs">Made with polished tagua beads in metallic tones, this bracelet combines natural elegance with a modern touch, offering a lightweight and eco-friendly accessory.</p>
+                    <p class="price text-xl font-semibold">$18.00</p>
+                    <button class="border-2-none rounded-lg bg-orange-400 hover:bg-orange-700 m-2">Order</button>
+                </div>
             </div>
 
             <div class="p-card">
-                <img src="" alt="">
-                <h1>Name</h1>
-                <p>Description</p>
-                <p>Price $</p>
-                <button>Order</button>
+                <div class="img-container">
+                    <img src="./images/p-bracelets-blue.jpg" alt="bracelets picture">
+                </div>
+                <div class="card-info">
+                    <h3 class="name font-semibold">Bracelet Blue Set</h3>
+                    <p class="description text-xs">Handcrafted from tagua beads in soft blue tones, this bracelet brings together natural beauty and delicate color, perfect for everyday wear.</p>
+                    <p class="price text-xl font-semibold">$25.00</p>
+                    <button class="border-2-none rounded-lg bg-orange-400 hover:bg-orange-700 m-2">Order</button>
+                </div>
             </div>
 
             <div class="p-card">
-                <img src="" alt="">
-                <h1>Name</h1>
-                <p>Description</p>
-                <p>Price $</p>
-                <button>Order</button>
+                <div class="img-container">
+                    <img src="./images/p-cross.jpg" alt="Silver Cross Picture">
+                </div>
+                <div class="card-info">
+                    <h3 class="name font-semibold">Cross</h3>
+                    <p class="description text-xs">Featuring a metal cross charm with adjustable cord, this bracelet blends spiritual symbolism with a simple, timeless design.</p>
+                    <p class="price text-xl font-semibold">$15.00</p>
+                    <button class="border-2-none rounded-lg bg-orange-400 hover:bg-orange-700 m-2">Order</button>
+                </div>
             </div>
+
         </section>
 
+
+        <!--Art Section -->
         <h1 id="art">Art</h1>
         <section class="product-container">
             <div class="p-card">
-                <img src="" alt="">
-                <h1>Name</h1>
-                <p>Description</p>
-                <p>Price $</p>
-                <button>Order</button>
+                <div class="img-container">
+                    <img src="./images/p-animals.jpg" alt="blue poncho picture">
+                </div>
+                <div class="card-info">
+                    <h3 class="name font-semibold">Blue Poncho</h3>
+                    <p class="description text-xs">Cozy blue poncho woven with traditional Ecuadorian patterns – perfect blend of warmth and style.</p>
+                    <p class="price text-xl font-semibold">$50.00</p>
+                    <button class="border-2-none rounded-lg bg-orange-400 hover:bg-orange-700 m-2">Order</button>
+                </div>
             </div>
 
             <div class="p-card">
-                <img src="" alt="">
-                <h1>Name</h1>
-                <p>Description</p>
-                <p>Price $</p>
-                <button>Order</button>
+                <div class="img-container">
+                    <img src="./images/p-animals.jpg" alt="blue poncho picture">
+                </div>
+                <div class="card-info">
+                    <h3 class="name font-semibold">Name</h3>
+                    <p class="description text-xs">Description</p>
+                    <p class="price text-xl font-semibold">$00.00</p>
+                    <button class="border-2-none rounded-lg bg-orange-400 hover:bg-orange-700 m-2">Order</button>
+                </div>
             </div>
 
             <div class="p-card">
-                <img src="" alt="">
-                <h1>Name</h1>
-                <p>Description</p>
-                <p>Price $</p>
-                <button>Order</button>
+                <div class="img-container">
+                    <img src="./images/p-animals.jpg" alt="blue poncho picture">
+                </div>
+                <div class="card-info">
+                    <h3 class="name font-semibold">Name</h3>
+                    <p class="description text-xs">Description</p>
+                    <p class="price text-xl font-semibold">$00.00</p>
+                    <button class="border-2-none rounded-lg bg-orange-400 hover:bg-orange-700 m-2">Order</button>
+                </div>
             </div>
         </section>
 
         <h1 id="combos">Combos</h1>
         <section class="product-container">
             <div class="p-card">
-                <img src="" alt="">
-                <h1>Name</h1>
-                <p>Description</p>
-                <p>Price $</p>
-                <button>Order</button>
+                <div class="img-container">
+                    <img src="./images/p-animals.jpg" alt="blue poncho picture">
+                </div>
+                <div class="card-info">
+                    <h3 class="name font-semibold">Name</h3>
+                    <p class="description text-xs">Description</p>
+                    <p class="price text-xl font-semibold">$00.00</p>
+                    <button class="border-2-none rounded-lg bg-orange-400 hover:bg-orange-700 m-2">Order</button>
+                </div>
             </div>
 
             <div class="p-card">
-                <img src="" alt="">
-                <h1>Name</h1>
-                <p>Description</p>
-                <p>Price $</p>
-                <button>Order</button>
+                <div class="img-container">
+                    <img src="./images/p-animals.jpg" alt="blue poncho picture">
+                </div>
+                <div class="card-info">
+                    <h3 class="name font-semibold">Name</h3>
+                    <p class="description text-xs">Description</p>
+                    <p class="price text-xl font-semibold">$00.00</p>
+                    <button class="border-2-none rounded-lg bg-orange-400 hover:bg-orange-700 m-2">Order</button>
+                </div>
             </div>
 
             <div class="p-card">
-                <img src="" alt="">
-                <h1>Name</h1>
-                <p>Description</p>
-                <p>Price $</p>
-                <button>Order</button>
+                <div class="img-container">
+                    <img src="./images/p-animals.jpg" alt="blue poncho picture">
+                </div>
+                <div class="card-info">
+                    <h3 class="name font-semibold">Name</h3>
+                    <p class="description text-xs">Description</p>
+                    <p class="price text-xl font-semibold">$00.00</p>
+                    <button class="border-2-none rounded-lg bg-orange-400 hover:bg-orange-700 m-2">Order</button>
+                </div>
             </div>
         </section>
     </Section>
+
+        <!--Page Footer-->
+        <footer class="flex ">
+            <img class="h-[50vh] ml-1 shrink-1" src="./images/Logo-market.png" alt="Market logo">
+    
+            <div class="footer-content flex">
+    
+                <div class="footer1 flex flex-col w-[33%] ">
+                    <h2 class="mb-4">Visit the Market in Person</h2>
+                    <a href="https://maps.app.goo.gl/cGnBLaXht747BvSbA" target="_blank"><p><i class="fa-solid fa-route"></i> Jorge Washington 611, Quito-Ecuador 170143</p></a>
+                </div>
+    
+                <div class="footer2 flex flex-col w-[33%]">
+                    <h2 class="mb-4">Customer Service</h2>
+                    <p>Contact us to know more information about the physical or online Artisanal Market</p>
+                    <p><i class="fa-solid fa-phone"></i> (593) 98-771-8191</p>
+                    <p><i class="fa-solid fa-envelope"></i> m.artesanal2021@gmail.com</p>
+                </div>
+    
+                <div class="footer3 flex flex-col w-[33%]" >
+                    <div class="social-media">
+                        <h2 class="mb-4">Follow</h2>
+                        <a href="https://www.facebook.com/MercadoArtesanalLaMariscalOficial/?locale=es_LA" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/explore/locations/518929/mercado-artesanal-la-mariscal/?hl=es" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <i class="fa-brands fa-youtube"></i>
+                        <a href="https://x.com/merc_lamariscal" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                    </div>
+                </div>
+    
+            </div>
+        </footer>
 
 </body>
 </html>
