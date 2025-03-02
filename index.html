@@ -1,15 +1,27 @@
+<!--Name: Ivan Galan
+    Date: 1/3/2025
+
+    AI use: 
+        I ask for IA for Ideas on how to make the variables for css correctly because I havent used them before a lot. I understood the ideas and then I applied it by myself. 
+        I ask ai for ideas of what type of SVG images I could add, and it gave me the idea of a humming bird in the main nav,, because is a typical animal from ecuador.
+        I ask Ai informaiton about the artisans because they are not the real artisans but I wanted to create that function to be able to show the idea.
+        I ask AI to help me traslate the description of the products that I add. 
+        
+-->
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Online Artisanal Market</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles1.css">
     
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=Delius+Unicase:wght@400;700&family=Fuzzy+Bubbles:wght@400;700&family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
     
     <!-- Google Icon -->
     <script src="https://kit.fontawesome.com/981336eb75.js" crossorigin="anonymous"></script>
@@ -20,21 +32,21 @@
 
 <body>
 
-    <section class="first-page">
+    <main class="first-page">
         <nav class="search-bar">
             <img clas="blue-logo" src="./images/logo-blue-market.png" alt="artisanal market logo">
             <img clas="white-logo"src="./images/Logo-market.png" alt="artisanal market logo">
             <h1 class="title-container">Online Artisanal Market</h1>
         </nav>
-        <!--<h1 class="title-first-page">Online Artisanal Market</h1>-->
+
         <div id="first-page-buttons">
             <a href="#about-us"><button><i class="fa-solid fa-shop"></i> Explore our Heritage</button></a>
             <a href="shop.html">
                 <button><i class="fa-solid fa-cart-shopping"></i> Shop Now</button>
             </a>
-                    </div>
-            <i class="fa-solid fa-angle-down"></i>
-    </section>
+        </div>
+            
+    </main>
 
     <section class="second-page">
         <section id="about-us" class="about-us">
@@ -99,7 +111,7 @@
                     <div class="card-image" style="background-image: url('./images/artisan-5.jpg');"></div>
                     <div class="card-info">
                         <h3 class="artisan-name">Mateo Lema</h3>
-                        <p class="artisan-description">Skilled artisan crafting handmade musical instruments, preserving the sound of Ecuador’s traditions.</p>
+                        <p class="artisan-description">Skilled artisan crafting handmade musical instruments, preserving the traditions.</p>
                     </div>
                 </div>
             </div>
@@ -125,38 +137,14 @@
             </ul>
             </div>
         </section>
-
-        <!--EXPLORE THE MARKET-->
-        <section class="image-slider">
-            <div class="slider-container">
-                <div class="slide fade" style="background-image: url('./images/horizontal-view-img.jpg');"></div>
-                <div class="slide fade" style="background-image: url('./images/hats.jpg');"></div>
-                <div class="slide fade" style="background-image: url('./images/p-art-1.jpg');"></div>
-                <div class="slide fade" style="background-image: url('./images/p-dress.jpg');"></div>
-            </div>
-            
-            <!-- Navigation Arrows -->
-            <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
-            <button class="next" onclick="moveSlide(1)">&#10095;</button>
+        
+    <!--Video Section-->
+        <section class="video-seciton">
+            <video class="market-video" src="./images/market-video.mp4" autoplay muted loop></video>
         </section>
         
-        
-        <script>
-        let currentIndex = 0;
-        const slides = document.querySelectorAll('.slide');
-        slides[currentIndex].classList.add('active');
-        
-        function moveSlide(step) {
-            slides[currentIndex].classList.remove('active');
-            currentIndex = (currentIndex + step + slides.length) % slides.length;
-            slides[currentIndex].classList.add('active');
-        }
-        
-        // changing image each 5 seconds
-        setInterval(() => moveSlide(1), 5000);
-        </script>
-        
-    </section>
+
+
 
     <!--Page Footer-->
     <footer class="flex ">
